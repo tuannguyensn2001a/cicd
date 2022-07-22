@@ -1,0 +1,12 @@
+name: Shell commands
+
+on: [push]
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a
+        run: echo "hello world"
+      - name: echo b
+        run: echo "hello world 2"
